@@ -18,3 +18,4 @@
 
 ```npm install socket.io@4``` - utilizamos a biblioteca Socket.IO, que permite trabalhar com o protocolo WebSockets de forma mais facilitada.
 
+```npm install mongodb@4.11``` - adiciona o MongoDB como uma dependência
