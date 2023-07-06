@@ -1,6 +1,6 @@
 import { MongoClient } from "mongodb";
 
-const cliente = new MongoClient();
+const cliente = new MongoClient(DADOS DO BANCO DE DADOS);
 
 let documentosColecao;
 
