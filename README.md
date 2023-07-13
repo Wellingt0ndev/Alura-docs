@@ -19,3 +19,7 @@
 ```npm install socket.io@4``` - utilizamos a biblioteca Socket.IO, que permite trabalhar com o protocolo WebSockets de forma mais facilitada.
 
 ```npm install mongodb@4.11``` - adiciona o MongoDB como uma dependência
+
+```npm install jsonwebtoken@8.5.1```  - Biblioteca para implementar o JWT
+
+```npm install dotenv@16.0.3```  - Biblioteca para deixar a informação sensível mais segura
