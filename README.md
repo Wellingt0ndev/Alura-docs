@@ -1,10 +1,22 @@
-<h4 align="center"> 
-    :construction:  Projeto em construção  :construction:
-</h4>
+
 
 <h1 align="center"> WebSockets: implemente comunicações em tempo real com Socket.IO e MongoDB </h1>
 
+<h2>1. Aplicar o fluxo de cadastro, login e armazenamento de JWT, na prática</h2>
 
+Cadastramos senhas criptografadas;
+Autenticamos os usuários e geramos o JWT no servidor, depois mandamos para o front-end;
+Guardamos o JWT nos cookies, no front-end. Definimos e lemos um cookie, deletamos ao fazer logout, etc.
+
+<h2>2. Controlar acessos</h2>
+
+Utilizamos middlewares do Socket.IO para verificar a autenticidade do cliente. Registramos uma função middleware no servidor e ela, basicamente, concedia ou bloqueava ao acesso de um cliente tentando se conectar ao nosso servidor;
+Para garantir que esse middleware fosse aplicado apenas nas páginas restritas do AluraDocs, nós criamos um namespace para registrar o middleware. Nomeamos nosso namespace como Usuarios, que apenas os usuários autenticados podem acessar.
+
+<h2>3. Controlar informações localmente</h2>
+
+Criamos uma lista local para controlar as conexões dos documentos, para saber qual usuário entrava em qual documento;
+Utilizamos socket.data para armazenar as informações no socket. Usamos essa propriedade, especificamente, para conseguir saber se um usuário já havia entrado no documento ou não. Podemos usar essa propriedade para diversas finalidades, para implementar funcionalidades ainda mais avançadas no AluraDocs.
 
 <h2 align="center"> Bibliotecas e dependências </h2>
 
