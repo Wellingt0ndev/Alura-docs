@@ -1,8 +1,8 @@
+import { Server } from "socket.io";
 import express from "express";
 import url from "url";
 import path from "path";
 import http from "http";
-import { Server } from "socket.io";
 
 import "./db/dbConnect.js";
 
